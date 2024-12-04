@@ -20,6 +20,7 @@ function App() {
         <h1>LOGO</h1>
         <Link to={"/"}>Home</Link>
         <Link to={"/about"}>about</Link>
+        <Link to={"/posts"}>Posts</Link>
         
         
       </nav>
@@ -27,8 +28,8 @@ function App() {
       <Routes>        
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/posts' element={<Post/>}/>
       </Routes>
-      <Post/>
       <DarkModeToggle />
       <Footer/>
     </Router>
