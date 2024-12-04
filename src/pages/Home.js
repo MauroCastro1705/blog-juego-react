@@ -6,11 +6,10 @@ function Home() {
             <div className='home-col1'>
                 <h1>HOME titulo h1</h1>
                 <h2>HOME titulo h2</h2>
-                <h1>HOME</h1>
-                <h1>HOME</h1>
-                <h1>HOME</h1>
-                <h1>HOME</h1>
-                <h1>HOME</h1>
+                <p>texto p de HOME</p>
+                <p>texto p de HOME</p>
+                <p>texto p de HOME</p>
+                
             </div>
             <div className='home-col2'>
                 <div className='home-col2-1'>

@@ -1,0 +1,44 @@
+/*--------NAVIGATOR-----*/
+@import "./variables.scss";
+nav{
+    background-color: $colorfooter-light;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    a{
+      color: white;
+      text-decoration: none;
+      margin: 20px;
+      font-weight: 700;
+    }
+    a:hover{
+      color: $colorprimario-light;
+    }
+    h1{
+      display: inline;
+      color: $colorprimario-light;
+      padding-right: 1000px;
+    }
+  }
+  
+  /*DARK MODE*/
+
+nav.dark-mode{
+  background-color: $colorfooter-dark;
+  a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: 700;
+  }
+  a:hover{
+    color: $colorprimario-dark;
+  }
+  h1{
+    display: inline;
+    color: $colorprimario-dark;
+    padding-right: 1000px;
+  }
+}

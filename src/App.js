@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import  Home  from "./pages/Home";
 import  About  from "./pages/About";
 import Footer from "./pages/Footer";
+import DarkModeToggle from "./controllers/DarkModeToggle"
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
+      <DarkModeToggle />
       <Footer/>
     </Router>
     

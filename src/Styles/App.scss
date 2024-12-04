@@ -1,3 +1,8 @@
+@import "./partials/variables.scss";
+@import "./partials/footer.scss";
+@import "./partials/home.scss";
+@import "./partials/nav.scss";
+
 
 body {
   margin: 0;
@@ -6,104 +11,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(12,9,16);
-  background: linear-gradient(180deg, rgba(12,9,16,1) 0%, rgba(11,49,66,1) 100%);
-}
+  background: $background-color-light;
+    h1{
+      color: $colorprimario-light;
+    }
+    h2{
+      color: $colorsecundario-light,
+    }
+    p{
+      color:$colortexto-light;
+    }
+  } 
 
-/*VARIABLES GENERALES*/
-$colorprimario : #EB5E28;
-$colorsecundario : #048A81;
-$colorterciario : #0B3142;
-$colortexto : white;
-$colorfooter : #0C0910;
-$colorfondo: rgba(217, 217, 217, 0.02);
-
-
-/*--------NAVIGATOR-----*/
-nav{
-  background-color: $colorfooter;
-  margin: 0 auto;
-  width: 100%;
-  height: 60px;
-  text-align: center;
-  padding-top: 10px;
-  a{
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    font-weight: 700;
-  }
-  a:hover{
-    color: $colorprimario;
-  }
+body.dark-mode {
+  
+  background: $background-color-dark;
   h1{
-    display: inline;
-    color: $colorprimario;
-    padding-right: 1000px;
-  }
-}
-
-
-/*--------HOMEEEE-----*/
-.home{
-  padding: 25px;
-  display: flex;
-  flex-direction: row;
-  h1{
-    color: $colorprimario;
+    color: $colorprimario-dark;
   }
   h2{
-    color: $colorsecundario,
+    color: $colorsecundario-dark;
   }
   p{
-    color:$colortexto;
+    color:$colortexto-dark;
   }
+  
 }
-.home-col1{
-  background: $colorfondo;
-  flex-direction: column;
-  width: 70%;
-  border-radius: 3%;
-  padding: 20px;
-  margin-right: 50px;
-}
-.home-col2{
-  flex-direction: column;
-  width: 20%;
-  border-radius: 3%;
- 
-}
-.home-col2-1{
-  background: $colorfondo;
-  height: 120px;
-  border-radius: 3%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.home-col2-2{
-  background: $colorfondo;
-  height: 500px;
-  border-radius: 3%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-/*--------FOTERR-----*/
-footer{
-  background-color: $colorfooter;
-  height: 90px;
-  color: white;
-  padding: 15px;
- }
- .btn-footer{
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
- }
