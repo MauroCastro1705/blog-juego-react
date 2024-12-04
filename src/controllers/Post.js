@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
+import { useParams } from "react-router-dom"
 import MarkDown from 'markdown-to-jsx';
 
 
 function Post() {
+    //const {file_name} = useParams();
 	const file_name = 'prueba-a1.md';
 	const [post, setPost] = useState('');
 
