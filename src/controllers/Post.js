@@ -1,32 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 
-function MarkdownPost() {
-  const [content, setContent] = useState('');
-  const { slug } = useParams();
+import MarkDown from 'markdown-to-jsx';
 
-  useEffect(() => {
-    async function loadMarkdownFile() {
-      try {
-        const file = await import(`../posts/${slug}.md`);
-        const response = await fetch(file.default);
-        const text = await response.text();
-        setContent(text);
-      } catch (error) {
-        console.error('Error loading markdown file:', error);
-        setContent('# Post Not Found');
-      }
-    }
 
-    loadMarkdownFile();
-  }, [slug]);
+function Post() {
+	const file_name = 'prueba-a1.md';
+	const [post, setPost] = useState('');
 
-  return (
-    <div className="markdown-content">
-      <ReactMarkdown>{content}</ReactMarkdown>
-    </div>
-  );
+	useEffect(() => {
+		import(`../posts/${file_name}`)
+			.then(res => {
+				fetch(res.default)
+					.then(res => res.text())
+					.then(res => setPost(res));
+			})
+			.catch(err => console.log(err));
+	});
+
+	return (
+		<div>
+			<MarkDown>
+				{post}
+			</MarkDown>
+		</div>
+	);
 }
 
-export default MarkdownPost;
+export default Post;

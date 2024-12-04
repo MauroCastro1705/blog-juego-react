@@ -5,9 +5,11 @@ import  Home  from "./pages/Home";
 import  About  from "./pages/About";
 import Footer from "./pages/Footer";
 import DarkModeToggle from "./controllers/DarkModeToggle"
-import MarkdownPostsViewer from "./controllers/Blog"
-import MarkdownPost from "./controllers/Post";
 
+import Post from "./controllers/Post";
+//import MarkdownPostsViewer from "./controllers/Blog"
+//import MarkdownPost from "./controllers/Post";
+//import MarkDown from 'markdown-to-jsx';
 
 
 
@@ -25,9 +27,8 @@ function App() {
       <Routes>        
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path="/posts/:slug" element={<MarkdownPost />} />
       </Routes>
-    
+      <Post/>
       <DarkModeToggle />
       <Footer/>
     </Router>
