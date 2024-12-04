@@ -16,7 +16,7 @@ $colorsecundario : #048A81;
 $colorterciario : #0B3142;
 $colortexto : white;
 $colorfooter : #0C0910;
-$colorfondo: rgba(217, 217, 217, 0.04);
+$colorfondo: rgba(217, 217, 217, 0.02);
 
 
 /*--------NAVIGATOR-----*/
@@ -31,7 +31,10 @@ nav{
     color: white;
     text-decoration: none;
     margin: 20px;
-
+    font-weight: 700;
+  }
+  a:hover{
+    color: $colorprimario;
   }
   h1{
     display: inline;
@@ -52,6 +55,9 @@ nav{
   h2{
     color: $colorsecundario,
   }
+  p{
+    color:$colortexto;
+  }
 }
 .home-col1{
   background: $colorfondo;
@@ -62,13 +68,28 @@ nav{
   margin-right: 50px;
 }
 .home-col2{
-  background: $colorfondo;
   flex-direction: column;
   width: 20%;
   border-radius: 3%;
-  padding: 20px;
+ 
 }
-
+.home-col2-1{
+  background: $colorfondo;
+  height: 120px;
+  border-radius: 3%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.home-col2-2{
+  background: $colorfondo;
+  height: 500px;
+  border-radius: 3%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
 /*--------FOTERR-----*/
 footer{
@@ -76,4 +97,13 @@ footer{
   height: 90px;
   color: white;
   padding: 15px;
+ }
+ .btn-footer{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
  }
