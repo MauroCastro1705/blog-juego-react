@@ -5,6 +5,8 @@ import  Home  from "./pages/Home";
 import  About  from "./pages/About";
 import Footer from "./pages/Footer";
 import DarkModeToggle from "./controllers/DarkModeToggle"
+import MarkdownPostsViewer from "./controllers/Blog"
+import MarkdownPost from "./controllers/Post";
 
 
 
@@ -23,7 +25,9 @@ function App() {
       <Routes>        
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path="/posts/:slug" element={<MarkdownPost />} />
       </Routes>
+    
       <DarkModeToggle />
       <Footer/>
     </Router>
