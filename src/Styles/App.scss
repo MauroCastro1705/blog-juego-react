@@ -6,20 +6,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(12,9,16);
+  background: linear-gradient(180deg, rgba(12,9,16,1) 0%, rgba(11,49,66,1) 100%);
 }
 
+/*VARIABLES GENERALES*/
+$colorprimario : #EB5E28;
+$colorsecundario : #048A81;
+$colorterciario : #0B3142;
+$colortexto : white;
+$colorfooter : #0C0910;
+$colorfondo: rgba(217, 217, 217, 0.04);
+
+
+/*--------NAVIGATOR-----*/
 nav{
-  background-color: brown;
+  background-color: $colorfooter;
   margin: 0 auto;
   width: 100%;
   height: 60px;
   text-align: center;
   padding-top: 10px;
-  
+  a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+
+  }
+  h1{
+    display: inline;
+    color: $colorprimario;
+    padding-right: 1000px;
+  }
 }
 
-nav a{
-  color: white;
-  text-decoration: none;
-  margin: 20px;
+
+/*--------HOMEEEE-----*/
+.home{
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  h1{
+    color: $colorprimario;
+  }
+  h2{
+    color: $colorsecundario,
+  }
 }
+.home-col1{
+  background: $colorfondo;
+  flex-direction: column;
+  width: 70%;
+  border-radius: 3%;
+  padding: 20px;
+  margin-right: 50px;
+}
+.home-col2{
+  background: $colorfondo;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 3%;
+  padding: 20px;
+}
+
+
+/*--------FOTERR-----*/
+footer{
+  background-color: $colorfooter;
+  height: 90px;
+  color: white;
+  padding: 15px;
+ }
