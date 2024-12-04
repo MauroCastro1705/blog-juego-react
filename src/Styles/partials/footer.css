@@ -1,12 +1,16 @@
+@charset "UTF-8";
 /*--------FOTERR-----*/
 /*VARIABLES GENERALES*/
 /*DARK MODE*/
 /*LIGHT MODE*/
 footer {
-  background-color: #F1F1F1;
+  background-color: #F8F9FA;
   height: 90px;
   color: white;
   padding: 15px;
+}
+footer img {
+  filter: invert(1);
 }
 
 .btn-footer {
@@ -17,6 +21,10 @@ footer {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-footer :hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
 
 footer.dark-mode {
@@ -24,4 +32,7 @@ footer.dark-mode {
   height: 90px;
   color: white;
   padding: 15px;
+}
+footer.dark-mode img {
+  filter: invert(0);
 }/*# sourceMappingURL=footer.css.map */

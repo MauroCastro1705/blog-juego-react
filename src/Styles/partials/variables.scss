@@ -6,15 +6,15 @@ $colorsecundario-dark: #048A81;
 $colorterciario-dark : #0B3142;
 $colortexto-dark : white;
 $colorfooter-dark : #0C0910;
-$colorfondo-dark: rgba(217, 217, 217, 0.02);
 $background-color-dark: #0c0910;
+$colorfondo-dark: rgba(217, 217, 217, 0.02);
 
 /*LIGHT MODE*/
 
-$colorfondo-light: rgba(217, 217, 217, 0.02);
-$colorprimario-light: blue;
-$colorsecundario-light: green;
-$colorterciario-light: #A8DADC;
-$colortexto-light: #1D3557;
-$colorfooter-light: red;
-$background-color-light: #F8F9FA;
+$colorfondo-light: rgba(90, 82, 82, 0.02);
+$colorprimario-light: #FF4500;      // Rojo anaranjado brillante que destaca.
+$colorsecundario-light: #FFD700;   // Amarillo dorado para transmitir energía.
+$colorterciario-light: #1F2041;    // Azul casi negro para un contraste fuerte.
+$colortexto-light: #222222;        // Negro ligeramente atenuado.
+$colorfooter-light: #F8F9FA;       // Gris casi blanco, ideal para áreas secundarias.
+$background-color-light: #FFF8E1;  
