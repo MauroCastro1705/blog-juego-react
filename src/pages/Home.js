@@ -43,10 +43,10 @@ function Home() {
                 </ul>                
             </div>
             <div className='col-4'>
-                <div className='home-col2-1'>
+                <div className=''>
                     <h1>HOME col2 titulo h1</h1>                    
                 </div>
-                <div className='home-col2-2'>
+                <div className=''>
                     <h1>HOME col2-2</h1>
                     <h1>HOME</h1>
                     <h1>HOME</h1>

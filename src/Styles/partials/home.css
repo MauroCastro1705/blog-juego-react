@@ -1,43 +1,4 @@
 /*--------HOMEEEE-----*/
 /*VARIABLES GENERALES*/
 /*DARK MODE*/
-/*LIGHT MODE*/
-.home {
-  padding: 25px;
-  display: flex;
-  flex-direction: row;
-}
-
-.home-col1 {
-  background: rgba(90, 82, 82, 0.02);
-  flex-direction: column;
-  width: 70%;
-  border-radius: 3%;
-  padding: 20px;
-  margin-right: 50px;
-}
-
-.home-col2 {
-  flex-direction: column;
-  width: 20%;
-  border-radius: 3%;
-}
-
-.home-col2-1 {
-  background: rgba(90, 82, 82, 0.02);
-  height: 120px;
-  border-radius: 3%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.home-col2-2 {
-  background: rgba(90, 82, 82, 0.02);
-  height: 500px;
-  border-radius: 3%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}/*# sourceMappingURL=home.css.map */
+/*LIGHT MODE*//*# sourceMappingURL=home.css.map */

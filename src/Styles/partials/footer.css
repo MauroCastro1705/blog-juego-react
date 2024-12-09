@@ -3,13 +3,13 @@
 /*VARIABLES GENERALES*/
 /*DARK MODE*/
 /*LIGHT MODE*/
-footer {
+.footer {
   background-color: #F8F9FA;
   height: 90px;
   color: white;
   padding: 15px;
 }
-footer img {
+.footer img {
   filter: invert(1);
 }
 
@@ -27,12 +27,12 @@ footer img {
   transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
 
-footer.dark-mode {
+.footer.dark-mode {
   background-color: #0C0910;
   height: 90px;
   color: white;
   padding: 15px;
 }
-footer.dark-mode img {
+.footer.dark-mode img {
   filter: invert(0);
 }/*# sourceMappingURL=footer.css.map */
