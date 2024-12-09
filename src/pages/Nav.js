@@ -21,7 +21,7 @@ function Nav() {
                 </li>
                 <li class="nav-item">
                 <Link to={"/about"}>about</Link>
-                </li> 
+                </li>                 
                 <DarkModeToggle />               
             </ul>
             </div>
