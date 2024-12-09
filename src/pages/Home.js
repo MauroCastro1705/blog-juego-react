@@ -2,23 +2,28 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 function Home() {
+
+    const posteos = [
+        { id: "post1", title: "Post 1" },
+        { id: "post2", title: "Post 2" },
+        { id: "post3", title: "Post 3" },
+      ];
+
     return (
-        <div className='home'>
-            <div className='home-col1'>
-            <h1>Posts</h1>
-                <ul>
-                    <li>
-                    <Link to="/post1">Post 1</Link>
-                    </li>
-                    <li>
-                    <Link to="/post2">Post 2</Link>
-                    </li>
-                    <li>
-                    <Link to="/post3">Post 3</Link>
-                    </li>
-                </ul>                
+        <div className='container'>
+            <div className='row'>
+            <div className='col-8'>
+                <button type="button" class="btn btn-primary">Primary</button>  
+            <h1>Posts</h1>                              
+            <ul>
+                {posteos.map((post) => (
+                <li key={post.id}>
+                    <Link to={`/posts/${post.id}`}>{post.title}</Link>
+                </li>
+                ))}
+            </ul>                
             </div>
-            <div className='home-col2'>
+            <div className='col-4'>
                 <div className='home-col2-1'>
                     <h1>HOME col2 titulo h1</h1>                    
                 </div>
@@ -30,7 +35,7 @@ function Home() {
                 </div>                
             </div>
             
-
+            </div>
         </div>
         
     )

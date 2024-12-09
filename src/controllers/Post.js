@@ -1,30 +1,18 @@
-import React, { useState, useEffect } from 'react';
-//import { useParams } from "react-router-dom"
-import MarkDown from 'markdown-to-jsx';
-
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 
 function Post() {
-    //const {file_name} = useParams();
-	const file_name = 'prueba-a1.md';
-	const [post, setPost] = useState('');
+  const { filename } = useParams();
+  const [markdownContent, setMarkdownContent] = useState("");
+  console.log(markdownContent)
+  useEffect(() => {
+    fetch(`/posts/${filename}.md`)
+      .then((response) => response.text())
+      .then((text) => setMarkdownContent(text));
+  }, [filename]);
 
-	useEffect(() => {
-		import(`../posts/${file_name}`)
-			.then(res => {
-				fetch(res.default)
-					.then(res => res.text())
-					.then(res => setPost(res));
-			})
-			.catch(err => console.log(err));
-	});
-
-	return (
-		<div>
-			<MarkDown>
-				{post}
-			</MarkDown>
-		</div>
-	);
+  return <ReactMarkdown>{markdownContent}</ReactMarkdown>;
 }
 
 export default Post;

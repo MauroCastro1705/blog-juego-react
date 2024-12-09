@@ -2,43 +2,35 @@
 /*VARIABLES GENERALES*/
 /*DARK MODE*/
 /*LIGHT MODE*/
-nav {
-  background-color: #F1F1F1;
-  margin: 0 auto;
-  width: 100%;
-  height: 60px;
-  text-align: center;
-  padding-top: 10px;
+.navbarcustom {
+  background-color: #F8F9FA;
 }
-nav a {
+.navbarcustom a {
   color: white;
   text-decoration: none;
   margin: 20px;
   font-weight: 700;
+  color: #222222;
 }
-nav a:hover {
-  color: #FF6B35;
+.navbarcustom a:hover {
+  color: #FF4500;
 }
-nav h1 {
-  display: inline;
-  color: #FF6B35;
-  padding-right: 1000px;
+.navbarcustom h1 {
+  color: #FF4500;
 }
 
 /*DARK MODE*/
-nav.dark-mode {
+.navbarcustom.dark-mode {
   background-color: #0C0910;
-}
-nav.dark-mode a {
   color: white;
-  text-decoration: none;
-  margin: 20px;
-  font-weight: 700;
 }
-nav.dark-mode a:hover {
+.navbarcustom.dark-mode a {
+  color: white;
+}
+.navbarcustom.dark-mode a:hover {
   color: #EB5E28;
 }
-nav.dark-mode h1 {
+.navbarcustom.dark-mode h1 {
   display: inline;
   color: #EB5E28;
   padding-right: 1000px;

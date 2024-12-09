@@ -27,8 +27,8 @@ class DarkModeToggle extends Component {
     
     // Select and add dark mode to nav, footer, and home
     const elementsToToggle = [
-      document.querySelector('nav'),
-      document.querySelector('footer'),
+      document.querySelector('.navbarcustom'),
+      document.querySelector('.footer'),
       document.querySelector('.home')
     ];
 
@@ -44,8 +44,8 @@ class DarkModeToggle extends Component {
     document.body.classList.remove("dark-mode");
     
     const elementsToToggle = [
-      document.querySelector('nav'),
-      document.querySelector('footer'),
+      document.querySelector('.navbarcustom'),
+      document.querySelector('.footer'),
       document.querySelector('.home')
     ];
 
