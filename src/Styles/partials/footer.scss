@@ -1,7 +1,7 @@
 /*--------FOTERR-----*/
 @import "./variables.scss";
 
-footer{
+.footer{
     background-color: $colorfooter-light;
     height: 90px;
     color: white;
@@ -24,7 +24,7 @@ footer{
       }
    }
 
-footer.dark-mode{
+.footer.dark-mode{
     background-color: $colorfooter-dark;
     height: 90px;
     color: white;

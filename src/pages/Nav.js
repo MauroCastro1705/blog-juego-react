@@ -17,9 +17,6 @@ function Nav() {
                 <Link to={"/"}>Home</Link>
                 </li>
                 <li class="nav-item">
-                <Link to={"/posts"}>Posts</Link>
-                </li>
-                <li class="nav-item">
                 <Link to={"/about"}>about</Link>
                 </li>                 
                 <DarkModeToggle />               
